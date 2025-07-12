@@ -45,7 +45,7 @@ I got curious about hooking up an LTE module to my ESP32 and thought, “Why not
 - Open up the Arduino IDE -> **Sketch > Include Library > Manage Libraries** -> Search and install those libraries.
 
 ### 3. Tweak the Code
-- Open `sketch.ino` and update:
+- Open `ESP32_EC200U_LTE_Dashboard.ino` and update:
   - `ssid` and `password` with your Wi-Fi details.
   - `firebaseURL` with your Firebase URL.
   - Change the APN in `AT+QICSGP=1,1,\"airtelgprs.com\",\"\",\"\",1` if your network needs it.
@@ -58,7 +58,7 @@ I got curious about hooking up an LTE module to my ESP32 and thought, “Why not
 - Pop in a SIM card and power it on!
 
 ### 5. Upload the Sketch
-- Load `sketch.ino` in Arduino IDE -> Pick your ESP32 board and port (**Tools > Board** and **Tools > Port**) -> Click **Upload**.
+- Load `ESP32_EC200U_LTE_Dashboard.ino` in Arduino IDE -> Pick your ESP32 board and port (**Tools > Board** and **Tools > Port**) -> Click **Upload**.
 
 ### 6. Check Out the Dashboard
 - Open your browser -> Go to `http://esp32-ec200u.local` or the IP from Serial Monitor (115200 baud).
